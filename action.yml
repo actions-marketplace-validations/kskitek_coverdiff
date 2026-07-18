@@ -18,7 +18,7 @@ runs:
         ref: ${{ github.event.pull_request.head.sha }}
         fetch-depth: '1'
     - name: 'Setup Golang'
-      uses: actions/setup-go@v5
+      uses: actions/setup-go@v7
       with:
         go-version-file: go.mod
     - name: 'Generate coverage After'
